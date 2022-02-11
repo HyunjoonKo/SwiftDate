@@ -19,7 +19,7 @@ public struct Region: Decodable, Encodable, Equatable, Hashable, CustomStringCon
 	// MARK: - Properties
 
 	/// Calendar associated with region
-	public let calendar: Calendar
+	public var calendar: Calendar
 
 	/// Locale associated with region
 	public var locale: Locale { return calendar.locale! }
